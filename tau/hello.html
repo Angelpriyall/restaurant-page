@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reservation Section</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .reservation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px 80px;
+      background-color: #fff8e1;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .reservation-content {
+      width: 50%;
+      min-width: 300px;
+    }
+
+    .reservation-content h2 {
+      font-size: 36px;
+      font-weight: bold;
+      color: #111;
+      margin-bottom: 20px;
+    }
+
+    .reservation-content p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .reserve-btn {
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #fbbd08;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 16px;
+      transition: background 0.3s ease;
+    }
+
+    .reserve-btn:hover {
+      background: #e0a800;
+    }
+
+    .reservation-image {
+      width: 250px;
+    }
+
+    .reservation-image img {
+      width: 100%;
+      border-radius: 50%;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    @media (max-width: 768px) {
+      .reservation {
+        flex-direction: column-reverse;
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      .reservation-content {
+        width: 100%;
+      }
+
+      .reservation-image {
+        width: 200px;
+        margin-bottom: 30px;
+      }
+
+      .reservation-content h2 {
+        font-size: 28px;
+      }
+
+      .reserve-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="reservation">
+    <div class="reservation-content">
+      <h2>Do You Have Any Dinner Plan Today? Reserve Your Table</h2>
+      <p>
+        Make online reservations, read restaurant reviews from diners, and earn points towards free meals. 
+        OpenTable is a real-time online reservation.
+      </p>
+      <button class="reserve-btn">Make Reservation</button>
+    </div>
+    <div class="reservation-image">
+      <img src="last.png" alt="Dish for reservation">
+    </div>
+  </section>
+
+</body>
+</html>

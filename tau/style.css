@@ -1,0 +1,496 @@
+/* ========== RESET AND GLOBAL ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background-color: hwb(45 98% 0%);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ========== HEADER ========== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+nav .reserve-btn {
+  background-color: #fbb03b;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ========== HERO SECTION ========== */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 5%;
+  background-color: #fff8e1;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-buttons button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.explore-btn {
+  background-color: #fbb03b;
+  color: #fff;
+}
+
+.search-btn {
+  background-color: #fff;
+  border: 2px solid #fbb03b;
+}
+
+/* ========== POPULAR DISHES ========== */
+.popular {
+  padding: 40px 5%;
+  background-color: #fff8e1;
+  gap: 10px;
+}
+
+.popular h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  min-width: 200px;
+  text-align: center;
+}
+
+/* ========== ABOUT SECTION ========== */
+.about {
+  display: flex;
+  padding: 40px 5%;
+  background-color: #fff8e1;
+  align-items: center;
+}
+
+.chef-image img {
+  width: 200px;
+  border-radius: 12px;
+}
+
+.about-text {
+  margin-left: 40px;
+}
+
+.about-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.about-text ul {
+  list-style: none;
+}
+
+.about-text li {
+  margin-bottom: 10px;
+}
+
+/* ========== MENU SECTION ========== */
+.regular-menu{
+    background-color: #fff8e1
+}
+.menu-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.menu-tabs button {
+  padding: 10px 20px;
+  border: none;
+  background: #eee;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.menu-tabs .active {
+  background: #fbbd08;
+  color: white;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 0 5%;
+  margin-top: 30px;
+}
+
+.menu-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+
+.menu-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.menu-card h3 {
+  margin: 10px 0 5px;
+}
+
+.menu-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.menu-card .price {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.menu-card button {
+  background: #fbbd08;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.star {
+  color: gold;
+}
+
+/* ========== RESERVATION SECTION ========== */
+
+  .reservation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px 80px;
+      background-color: #fff8e1;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .reservation-content {
+      width: 50%;
+      min-width: 300px;
+    }
+
+    .reservation-content h2 {
+      font-size: 36px;
+      font-weight: bold;
+      color: #111;
+      margin-bottom: 20px;
+    }
+
+    .reservation-content p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+    }
+    .reserve-btn {
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #fbbd08;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 16px;
+      transition: background 0.3s ease;
+    }
+
+    .reserve-btn:hover {
+      background: #e0a800;
+    }
+
+    .reservation-image {
+      width: 250px;
+    }
+
+    .reservation-image img {
+      width: 100%;
+      border-radius: 50%;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+     @media (max-width: 768px) {
+      .reservation {
+        flex-direction: column-reverse;
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      .reservation-content {
+        width: 100%;
+      }
+
+      .reservation-image {
+        width: 200px;
+        margin-bottom: 30px;
+      }
+
+      .reservation-content h2 {
+        font-size: 28px;
+      }
+
+      .reserve-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+      }
+    }
+
+/* ========== TESTIMONIALS ========== */
+.testimonials {
+  margin-top: 60px;
+  padding: 0 5%;
+  background-color: #fff8e1
+}
+
+.testimonials h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  flex: 1;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+/* ========== CHEFS SECTION ========== */
+.chefs {
+  margin-top: 60px;
+  text-align: center;
+  padding: 0 5%;
+  background-color: #fff8e1
+ 
+}
+
+.chef-grid {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #fff8e1;
+  
+
+}
+
+.chef-card {
+  text-align: center;
+
+}
+
+.chef-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 0%;
+ 
+}
+
+/* ========== APP PROMO SECTION ========== */
+.footer {
+ 
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 60px;
+  background-color: #fff8e1
+}
+
+.footer img {
+  width: 200px;
+  margin-top: 20px;
+}
+
+/* ========== PAGE FOOTER ========== */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #fff8e1
+}
+
+/* ========== UTILITIES ========== */
+.about-us {
+  text-decoration: none;
+  border: none;
+  border-radius: 20px;
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background: #fbb03b;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ========== responsive========== */
+/* ========== MEDIA QUERIES FOR MOBILE ========== */
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .menu-tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 10px;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr; /* 1 item per row */
+  }
+
+  .reservation img {
+    display: none; /* hide image on small screens */
+  }
+
+  .testimonial-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chef-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer img {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .reserve-btn,
+  .explore-btn,
+  .search-btn {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .popular h2,
+  .menu-tabs button,
+  .about-text h2,
+  .reservation h2,
+  .testimonials h2,
+  .chefs h2,
+  .footer h2 {
+    font-size: 1.4rem;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+}
+body{
+ background-color: #fff8e1;
+}
+

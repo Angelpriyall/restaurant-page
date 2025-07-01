@@ -1,0 +1,368 @@
+/* ========== RESET & GLOBAL ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background-color: rgb(236, 206, 149);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ========== HEADER ========== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  flex-wrap: wrap;
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+nav .reserve-btn {
+  background-color: #fbb03b;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ========== HERO SECTION ========== */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 5%;
+  background-color: #fff8e1;
+  gap: 2rem;
+}
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.hero-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.explore-btn, .search-btn {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+.explore-btn {
+  background-color: #fbb03b;
+  color: #fff;
+}
+.search-btn {
+  background-color: #fff;
+  border: 2px solid #fbb03b;
+}
+
+/* ========== POPULAR DISHES ========== */
+.popular {
+  padding: 40px 5%;
+  background-color: #fff8e1;
+}
+.popular h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.cards {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+.card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  min-width: 200px;
+  text-align: center;
+}
+
+/* ========== ABOUT SECTION ========== */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 5%;
+  background-color: #fff8e1;
+  align-items: center;
+  gap: 2rem;
+}
+.chef-image img {
+  width: 200px;
+  border-radius: 12px;
+}
+.about-text {
+  flex: 1;
+}
+.about-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+.about-text ul {
+  list-style: none;
+}
+.about-text li {
+  margin-bottom: 10px;
+}
+
+/* ========== MENU SECTION ========== */
+.menu-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+.menu-tabs button {
+  padding: 10px 20px;
+  border: none;
+  background: #eee;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.menu-tabs .active {
+  background: #fbbd08;
+  color: white;
+}
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 0 5%;
+  margin-top: 30px;
+}
+.menu-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+.menu-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.menu-card h3 {
+  margin: 10px 0 5px;
+}
+.menu-card p {
+  font-size: 14px;
+  color: #555;
+}
+.menu-card .price {
+  font-weight: bold;
+  margin: 10px 0;
+}
+.menu-card button {
+  background: #fbbd08;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.star {
+  color: gold;
+}
+
+/* ========== RESERVATION SECTION ========== */
+.reservation {
+  background: #fff0d9;
+  padding: 40px 20px;
+  margin-top: 50px;
+  text-align: center;
+  border-radius: 20px;
+  position: relative;
+}
+.reservation img {
+  width: 120px;
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  border-radius: 50%;
+}
+.reservation h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.reservation p {
+  color: #555;
+}
+.reserve-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #fbbd08;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* ========== TESTIMONIALS ========== */
+.testimonials {
+  margin-top: 60px;
+  padding: 0 5%;
+}
+.testimonials h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+.testimonial {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  flex: 1;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+/* ========== CHEFS SECTION ========== */
+.chefs {
+  margin-top: 60px;
+  text-align: center;
+  padding: 0 5%;
+}
+.chef-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+  gap: 20px;
+  background-color: #fefcf8;
+}
+.chef-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 0%;
+}
+
+/* ========== APP PROMO ========== */
+.footer {
+  background: #fef9e7;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 60px;
+}
+.footer img {
+  width: 200px;
+  margin-top: 20px;
+}
+
+/* ========== PAGE FOOTER ========== */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* ========== BUTTON UTILS ========== */
+.about-us {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background: #fbb03b;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* ========== RESPONSIVE MEDIA QUERIES ========== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .hero-image img {
+    width: 100%;
+    max-width: 300px;
+  }
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-text {
+    margin: 20px 0 0;
+  }
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+  .reservation img {
+    display: none;
+  }
+  .testimonial-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .chef-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer img {
+    max-width: 250px;
+    width: 100%;
+  }
+  .reserve-btn,
+  .explore-btn,
+  .search-btn {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  .hero-text h1,
+  .popular h2,
+  .menu-tabs button,
+  .about-text h2,
+  .reservation h2,
+  .testimonials h2,
+  .chefs h2 {
+    font-size: 1.4rem;
+  }
+  nav a {
+    font-size: 14px;
+  }
+}
